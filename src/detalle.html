@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Brand</a>
+        <ul class="navbar-nav flex-row gap-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+        </ul>
+        <span>🛒</span>
+      </div>
+    </nav>
+
+    <div class="container py-4">
+      <p id="breadcrumb">Inicio / Productos / <span id="bcNombre"></span></p>
+
+      <div class="row">
+        <div class="col-md-6">
+          <img class="prod-img" id="prodImg" src="" alt="" />
+        </div>
+        <div class="col-md-6">
+          <h1 id="prodNombre"></h1>
+          <h3 id="prodPrecio"></h3>
+          <p><span id="prodEstrellas"></span> (<span id="prodResenas"></span>)</p>
+          <p id="prodResumen"></p>
+
+          <p>Cantidad</p>
+          <div class="mb-3">
+            <button class="btn btn-outline-secondary" id="menos">−</button>
+            <input type="text" id="cantidad" value="1" class="d-inline-block text-center" style="width: 50px" />
+            <button class="btn btn-outline-secondary" id="mas">+</button>
+          </div>
+
+          <button class="btn btn-primary" id="agregar">Agregar al carrito</button>
+          <span id="aviso" class="ms-2 text-success" hidden>Agregado</span>
+        </div>
+      </div>
+
+      <h4 class="mt-4">Descripción</h4>
+      <p id="prodDescripcion"></p>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/detalle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="text-dark">Productos</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand text-dark fw-bold" href="index.html">Brand</a>
+        <ul class="navbar-nav flex-row gap-3">
+          <li class="nav-item"><a class="nav-lin text-dark" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link text-dark" href="#">Nosotros</a></li>
+        </ul>
+        <span>🛒</span>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="">Nuestros productos</h1>
+        </div>
+
+        <div class="col-md-12">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Buscar productos..."
+            class="form-control mb-3"
+          />
+          <button class="btn btn-primary" id="filterBtn">Filtrar</button>
+
+          <div class="row" id="productContainer">
+            <!-- Aquí se mostrarán los productos -->
+          </div>
+
+          <nav>
+            <ul class="pagination" id="pagination"></ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/productos.js"></script>
+  </body>
+</html>
